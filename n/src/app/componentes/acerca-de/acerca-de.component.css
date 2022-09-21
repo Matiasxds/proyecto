@@ -1,0 +1,22 @@
+.row{
+    padding: 80px;
+    
+}
+div{
+   
+    text-align:center;
+    color: rgb(253, 253, 253);
+    ;
+}
+
+
+#perfilfoto{
+       border-radius: 100%;
+       width: 100%;
+  }
+
+
+#nombre{
+    font-weight: bold;
+margin-top: auto;    
+}
