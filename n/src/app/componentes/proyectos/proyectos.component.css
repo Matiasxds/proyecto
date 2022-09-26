@@ -1,0 +1,20 @@
+.row{
+    padding: 20px;
+    }
+    div{
+        color:aliceblue
+    }
+    h1,h3{
+        display: inline;
+    }
+    .contenedor{
+        width: auto;
+    }
+    .parte1 , .parte2{
+        display: inline-block;
+        text-align: justify;
+    }
+    .img-proyecto{
+        box-shadow: 10px 10px 30px rgb(255, 0, 0);
+        box-shadow: ejeX ejeY difumasion color;
+    }
