@@ -1,0 +1,6 @@
+.carousel{
+    interval: 2000
+    keyboard=true
+    ride="true"
+    wrap=true
+  }

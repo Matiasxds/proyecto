@@ -1,3 +1,36 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+   
+}
 #logoap{
-    width: 200px;
+    width: 180px;
+}
+
+img{
+    width: 55px;
+}
+
+.redes{
+    margin-right: 0.5em;
+    float: right;
+    margin-top: 10px;
+    
+}
+/*--- Para la vista de celular ---*/
+@media(max-width:575px){
+    .container{
+        flex-direction: column;
+  
+    }
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes img{
+    margin: 0.2em;
+}
 }

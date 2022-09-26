@@ -1,16 +1,4 @@
 div{
     background-color:transparent;
+    padding: -20px;
 }
-app-social{
-    float: right;
-    margin-top: 34px;
-    
-    
-    }
-    *{
-        margin-inline-end: -5px;
-            margin-left: -8px;
-        mask-border-repeat:110px ;
-            margin-top: -8px
-        
-        }
