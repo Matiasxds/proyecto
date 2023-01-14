@@ -1,9 +1,9 @@
 .row{
     padding: 80px;
-    
+
 }
 div{
-   
+
     text-align:center;
     color: rgb(253, 253, 253);
     ;
@@ -18,5 +18,5 @@ div{
 
 #nombre{
     font-weight: bold;
-margin-top: auto;    
+margin-top: auto;
 }

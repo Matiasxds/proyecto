@@ -1,9 +1,17 @@
 .row{
-padding: 10%;
+padding: 5%;
 }
-div{
-    color:aliceblue
-}
-h1,h3{
+
+h1,h2{
     display: inline;
+    color: aliceblue;
+
+}
+.btn-light{
+  width: 60%;
+}
+
+.bi-hammer::before{
+  width: 28%;
+  color: rgb(255, 0, 0);
 }

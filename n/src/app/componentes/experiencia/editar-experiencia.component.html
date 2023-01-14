@@ -1,0 +1,19 @@
+<div class="container" *ngIf="expLab">
+  <div class="row">
+      <div>
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+              <div class="form-group">
+                  <label for="nombreEx">Nombre de la empresa</label>
+                  <input type="text" class="form-control" id="nombreEx" name="nombreEx" [(ngModel)]="expLab.nombreEx" required>
+              </div>
+              <div class="form-group">
+                  <label for="descripcionEx">Descripcion de la tarea</label>
+                  <input type="text" class="form-control" id="descripcionEx" name="descripcionEx" [(ngModel)]="expLab.descripcionEx" required>
+              </div>
+              <button class="btn btn-primary">
+                  Actualizar
+              </button>
+          </form>
+      </div>
+  </div>
+</div>

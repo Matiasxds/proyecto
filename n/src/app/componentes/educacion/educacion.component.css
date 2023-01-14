@@ -1,9 +1,19 @@
 .row{
-    padding: 10%;
+    padding: 5%;
     }
-    div{
-        color:aliceblue
-    }
-    h1,h3{
-        display: inline;
-    }
+
+    h1,h2{
+      display: inline;
+      color: aliceblue;
+
+  }
+
+
+h1,h3{
+  display: inline;
+  color: aliceblue;
+}
+
+.btn-light{
+  width: 60%;
+}

@@ -13,6 +13,14 @@ import { HysComponent } from './componentes/hys/hys.component';
 import { FormsModule } from '@angular/forms';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { HttpClientModule} from "@angular/common/http";
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { interceptorProvider } from './service/interceptor.service';
+import { NuevaExperienciaComponent } from './componentes/experiencia/nueva-experiencia.component';
+import { EditarExperienciaComponent } from './componentes/experiencia/editar-experiencia.component';
+import { NuevaEducacionComponent } from './componentes/educacion/nueva-educacion.component';
+import { EditarEducacionComponent } from './componentes/educacion/editar-educacion.component';
 
 @NgModule({
   declarations: [
@@ -26,15 +34,24 @@ import { FooterComponent } from './componentes/footer/footer.component';
     HysComponent,
     ProyectosComponent,
     FooterComponent,
+    HomeComponent,
+    LoginComponent,
+    NuevaExperienciaComponent,
+    EditarExperienciaComponent,
+    NuevaEducacionComponent,
+    EditarEducacionComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     NgCircleProgressModule.forRoot({}),
-
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
