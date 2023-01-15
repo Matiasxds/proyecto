@@ -1,116 +1,39 @@
 <div class="row">
-  <h1>Hard & Soft Skills</h1> 
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-  <circle-progress
-   [imageSrc]="'../assets/html.png'"
-   [showImage]="true"
-   [showUnits]="false"
-   [imageHeight]="80"
-   [imageWidth]="80"
-   [showSubtitle]="false"
-    [percent]="15"
-    [radius]="100"
-    [outerStrokeWidth]="16"
-    [innerStrokeWidth]="8"
-    [outerStrokeColor]="'orange'"
-    [innerStrokeColor]="'white'"
-    [animation]="true"
-    [animationDuration]="1000"
-       ></circle-progress>
-    </div>
-    
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+
+  <h1>Hard & Soft skills</h1>
+  <div class="col-lg-2">
+      <button type="button" routerLink="/nuevahabilidad" class="btn btn-dark" *ngIf="isLogged">Nueva Habilidad</button>
+  </div>
+
+  <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let habilidad of habilidad">
       <circle-progress
-       [imageSrc]="'../assets/CSS.png'"
-       [showImage]="true"
-       [showUnits]="false"
-       [imageHeight]="80"
-       [imageWidth]="80"
-       [showSubtitle]="false"
-        [percent]="75"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'lightblue'"
-        [innerStrokeColor]="'blue'"
-        [animation]="true"
-        [animationDuration]="1000"
-           ></circle-progress>
-        </div>
+      [percent]="(habilidad.porcentaje)"
+      [radius]="90" [imageSrc]="''"
+      [title]="(habilidad.nombre)"
+      [titleColor]="'white'"
+      [showTitle]="true"
+      [showImage]="false"
+      [imageHeight]="70"
+      [imageWidth]="70"
+      [showUnits]="false"
+      [showSubtitle]="false"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="2"
+      [outerStrokeColor]="'blue'"
+      [innerStrokeColor]="'darkorange'"
+      [animation]="true"
+      [animationDuration]="600">
+      </circle-progress>
 
-        <div class="text-center col-sm-4 col-md-4 col-lg-4">
-          <circle-progress
-           [imageSrc]="'../assets/git.png'"
-           [showImage]="true"
-           [showUnits]="false"
-           [imageHeight]="80"
-           [imageWidth]="80"
-           [showSubtitle]="false"
-            [percent]="100"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'BLACK'"
-            [innerStrokeColor]="'white'"
-            [animation]="true"
-            [animationDuration]="1000"
-               ></circle-progress>
-            </div>
-
-            <div class="text-center col-sm-4 col-md-4 col-lg-4">
-              <circle-progress
-               [imageSrc]="'../assets/js.png'"
-               [showImage]="true"
-               [showUnits]="false"
-               [imageHeight]="80"
-               [imageWidth]="80"
-               [showSubtitle]="false"
-                [percent]="5"
-                [radius]="100"
-                [outerStrokeWidth]="16"
-                [innerStrokeWidth]="8"
-                [outerStrokeColor]="'yellow'"
-                [innerStrokeColor]="'black'"
-                [animation]="true"
-                [animationDuration]="1000"
-                   ></circle-progress>
-                </div>
-
-                <div class="text-center col-sm-4 col-md-4 col-lg-4">
-                  <circle-progress
-                   [imageSrc]="'../assets/grupal.png'"
-                   [showImage]="true"
-                   [showUnits]="false"
-                   [imageHeight]="80"
-                   [imageWidth]="80"
-                   [showSubtitle]="false"
-                    [percent]="100"
-                    [radius]="100"
-                    [outerStrokeWidth]="16"
-                    [innerStrokeWidth]="8"
-                    [outerStrokeColor]="'yellow'"
-                    [innerStrokeColor]="'darkorange'"
-                    [animation]="true"
-                    [animationDuration]="1000"
-                       ></circle-progress>
-                    </div>
-
-                    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-                      <circle-progress
-                       [imageSrc]="'../assets/eng.png'"
-                       [showImage]="true"
-                       [showUnits]="false"
-                       [imageHeight]="80"
-                       [imageWidth]="80"
-                       [showSubtitle]="false"
-                        [percent]="50"
-                        [radius]="100"
-                        [outerStrokeWidth]="16"
-                        [innerStrokeWidth]="8"
-                        [outerStrokeColor]="'green'"
-                        [innerStrokeColor]="'yellow'"
-                        [animation]="true"
-                        [animationDuration]="1000"
-                           ></circle-progress>
-                        </div>
+      <div>
+          <td *ngIf="isLogged">
+              <button class="btn btn-light" routerLink="/editarHabilidad/{{habilidad.id}}">
+                <i class="bi bi-pencil-square"></i>Editar</button>
+          </td>
+          <td *ngIf="isLogged">
+              <button class="btn btn-danger" (click)="delete(habilidad.id)">
+                <i class="bi bi-journal-x"></i>Borrar</button>
+          </td>
+      </div>
+  </div>
 </div>
