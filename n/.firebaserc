@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "frontendxds"
+  },
+  "targets": {
+    "frontendxds": {
+      "hosting": {
+        "nombre-del-proyecto": [
+          "frontendxds"
+        ]
+      }
+    }
+  }
+}

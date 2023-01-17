@@ -7,7 +7,7 @@ import { Habilidad } from '../Model/habilidad';
   providedIn: 'root'
 })
 export class HabilidadService {
-  URL ='http://localhost:8080/habilidad/'
+  URL ='https://backend-afit.onrender.com/habilidad/'
 
   constructor(private httpClient: HttpClient) { }
 

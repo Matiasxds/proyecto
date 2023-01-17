@@ -23,6 +23,10 @@ import { NuevaEducacionComponent } from './componentes/educacion/nueva-educacion
 import { EditarEducacionComponent } from './componentes/educacion/editar-educacion.component';
 import { NuevaHabilidadComponent } from './componentes/hys/nueva-habilidad.component';
 import { EditarHabilidadComponent } from './componentes/hys/editar-habilidad.component';
+import { EditarAcercaDeComponent } from './componentes/acerca-de/editar-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -45,7 +49,8 @@ import { EditarHabilidadComponent } from './componentes/hys/editar-habilidad.com
     NuevaEducacionComponent,
     EditarEducacionComponent,
     NuevaHabilidadComponent,
-    EditarHabilidadComponent
+    EditarHabilidadComponent,
+    EditarAcercaDeComponent
 
    ],
   imports: [
@@ -53,7 +58,9 @@ import { EditarHabilidadComponent } from './componentes/hys/editar-habilidad.com
     AppRoutingModule,
     FormsModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorProvider

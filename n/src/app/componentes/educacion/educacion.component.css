@@ -16,3 +16,20 @@ h1,h3{
 .btn-light{
   width: 60%;
 }
+
+.row{
+  padding: 20px;
+
+}
+div{
+
+  text-align:center;
+  color: rgb(253, 253, 253);
+  ;
+}
+.btn btn-success{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

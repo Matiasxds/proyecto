@@ -7,7 +7,7 @@ import { Educacion } from '../Model/educacion';
   providedIn: 'root'
 })
 export class ServEducacionService {
-URL= 'http://localhost:8080/educacion/'
+URL= 'https://backend-afit.onrender.com/educacion/'
   constructor(private httpClient : HttpClient) { }
 
   public lista(): Observable<Educacion[]>{

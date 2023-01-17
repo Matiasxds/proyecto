@@ -1,5 +1,5 @@
 .row{
-    padding: 80px;
+    padding: 20px;
 
 }
 div{
@@ -15,8 +15,35 @@ div{
        width: 100%;
   }
 
+/*Estilo de la foto de perfil*/
+@media (min-width: 576px){
+  #perfilfoto{
 
+
+      border-radius: 100%;
+
+
+
+  }
+}
+@media (max-width: 575px){
+  #perfilfoto{
+
+
+      border-radius: 100%;
+
+
+  }
+}
+
+/*etiqueta nombre*/
 #nombre{
-    font-weight: bold;
-margin-top: auto;
+  font-weight: bold;
+  margin-top: 30%;
+}
+
+.descripcion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

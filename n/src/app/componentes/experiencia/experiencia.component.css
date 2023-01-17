@@ -7,11 +7,15 @@ h1,h2{
     color: aliceblue;
 
 }
-.btn-light{
-  width: 60%;
-}
 
 .bi-hammer::before{
   width: 28%;
   color: rgb(255, 0, 0);
+}
+
+.btn btn-success{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
