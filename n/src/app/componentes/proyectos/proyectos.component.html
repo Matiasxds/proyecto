@@ -1,5 +1,5 @@
 <div class="row" *ngIf="proyecto">
-  <h1>Proyecto</h1>
+  <h1>Proyectos</h1>
   <div class="col-lg-2">
       <button type="button" class="btn btn-success" routerLink="/newProyecto" *ngIf="isLogged">
           Agregar Proyecto
@@ -15,9 +15,9 @@
                   <img src={{Proyecto.img}}  class="img-fluid"  id="fotoPort">
                 </div>
                 <td>
-                      <h1>{{Proyecto.nombre}}</h1>
+                      <h4>{{Proyecto.nombre}}</h4>
                   </td>
-                  <td><h2>{{Proyecto.descripcion}}</h2></td>
+                  <td><h6>{{Proyecto.descripcion}}</h6></td>
                   <td *ngIf="isLogged">
                       <button class="btn btn-light" routerLink="/editarP/{{Proyecto.id}}">
                         <i class="bi bi-pen-fill"></i> EDITAR</button>

@@ -14,7 +14,7 @@ h1,h3{
 }
 
 .btn-light{
-  width: 60%;
+  font-size: small;
 }
 
 .row{
@@ -32,4 +32,8 @@ div{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-danger{
+  font-size: small;
 }

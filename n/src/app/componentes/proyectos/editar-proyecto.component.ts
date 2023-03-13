@@ -64,8 +64,10 @@ export class EditarProyectoComponent implements OnInit {
   }
 
   uploadImage($event:any) {
-        const name ="p_" + this.name;
+    const id = this.activatedRoute.snapshot.params['id'];
+    const name ="p_" + id;
     this.imagenpService.uploadImage($event,name)
+
   }
 
   cancel(): void {
